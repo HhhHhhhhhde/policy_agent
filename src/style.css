@@ -1,0 +1,136 @@
+:root {
+  font-family: 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #f8f9fa, #eef2f6);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-sidebar {
+  background: #1d3557;
+  color: #fff;
+  transition: width 0.25s ease;
+}
+
+.sidebar-toggle {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.side-menu {
+  border-right: none !important;
+  background: transparent !important;
+}
+
+.side-menu .el-menu-item {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.side-menu .el-menu-item:hover {
+  background-color: rgba(69, 123, 157, 0.45) !important;
+  color: #fff;
+}
+
+.side-menu .el-menu-item.is-active {
+  background-color: rgba(69, 123, 157, 0.8) !important;
+  color: #fff !important;
+}
+
+.menu-icon {
+  margin-right: 8px;
+}
+
+.app-header {
+  height: auto !important;
+  min-height: 108px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #dbe2ea;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+}
+
+.title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.title-wrap h1 {
+  margin: 0;
+  font-size: 18px;
+  color: #1d3557;
+}
+
+.title-wrap p {
+  margin: 4px 0 0;
+  color: #457b9d;
+  font-size: 13px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d3557;
+  color: #fff;
+  font-weight: 700;
+}
+
+.status-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.status-card {
+  min-width: 130px;
+}
+
+.status-card .k {
+  margin: 0;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.status-card .v {
+  margin: 4px 0 0;
+  color: #1d3557;
+  font-weight: 700;
+}
+
+.app-main {
+  padding: 16px 20px !important;
+}
+
+.app-breadcrumb {
+  margin-bottom: 14px;
+}
+
+.card {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(29, 53, 87, 0.08);
+}
